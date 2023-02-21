@@ -1,0 +1,73 @@
+﻿1. What type would you choose for the following “numbers”?
+   1. A person’s telephone number   - String
+   2. A person’s height   - ushort
+   3. A person’s age   - byte
+   4. A person’s gender (Male, Female, Prefer Not To Answer)  - char/string
+   5. A person’s salary - double
+   6. A book’s ISBN - string
+   7. A book’s price - float
+   8. A book’s shipping weight - float
+   9. A country’s population - ulong
+   10. The number of stars in the universe  - ulong
+   11. The number of employees in each of the small or medium businesses in the United Kingdom (up to about 50,000 employees per business) - ushort
+2. What are the differences between value type and reference type variables? What is boxing and unboxing?
+The difference between value type and reference type variables are:
+* Value type will directly hold the value, while reference type will hold the memory address / reference to this value
+* Value types are stored in stack memory, and reference type are stored in heap memory
+* Value type will not be collected by garbage collector, while reference type will be collected by a garbage collector
+* Value type can be created by Struct or Enum, while reference type can be created by class, interface, delegate or array
+* Value type cannot accept null values, but reference type can accept null values
+        Boxing is the process of converting a value type variable into reference type one; unboxing is the process of converting a reference variable into a value type variable.
+3. What is meant by the terms managed resource and unmanaged resource in .NET
+"Unmanaged resource" is used to describe something not directly under the control of the garbage collector; while “managed resource” is used to describe something directly under the control of the garbage collector.
+4. What's the purpose of Garbage Collector in .NET?
+NET's garbage collector manages the allocation and release of memory for your application. Each time you create a new object, the common language runtime allocates memory for the object from the managed heap
+
+
+
+
+
+
+Controlling Flow and Converting Types
+Test your Knowledge
+1. What happens when you divide an int variable by 0?
+System.DivideByZeroException has been thrown, “Attempted to divide by zero”.
+
+
+2. What happens when you divide a double variable by 0?
+The result is infinity.
+
+
+3. What happens when you overflow an int variable, that is, set it to a value beyond its range?
+Error - “Integral constant is too large”
+
+
+4. What is the difference between x = y++; and x = ++y;?
+X = y++: assign y to x first and increment y by 1;
+X = ++y: increment y by 1 first and then assign this value to x
+
+
+5. What is the difference between break, continue, and return when used inside a loop statement?
+Break: stop the loop and execute the code outside the loop;
+Continue: skip the current loop and continue the next one;
+return : return the value and stop this function
+
+
+6. What are the three parts of a for statement and which of them are required?
+Three parts are initialization, condition and iterator. It is likely to get into an infinite loop if any of them is missing.
+
+
+7. What is the difference between the = and == operators?
+“=” is to assign a value to a variable while “==” is used to compare two variables are equal to each other
+
+
+8. Does the following statement compile? for ( ; true; ) ;
+Yes but it will be an infinite loop.
+
+
+9. What does the underscore _ represent in a switch expression?
+The underscore (_) character replaces the default keyword to signify that it should match anything if reached
+
+
+10. What interface must an object implement to be enumerated over by using the foreach statement?
+The IEnumerable interface.
