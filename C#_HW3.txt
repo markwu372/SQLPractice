@@ -1,0 +1,62 @@
+1. What are the six combinations of access modifier keywords and what do they do?
+Public: members can be accessed anywhere;
+Protected: members can be accessed in current class and children classes;
+Private: members can be accessed only in current class;
+Internal: member can be assessed in current assembly;
+Protected internal: member can be accessed only in the same assembly or in a derived class in other assemblies
+Private internal: member can be accessed only inside the containing class or in a class that derives from a containing class, but only in the same assembly(project)
+
+2. What is the difference between the static, const, and readonly keywords when applied to
+a type member?
+Static: members belong to the class itself instead of any instance; 
+Const: members whose values will not change during the lifetime of the program
+Readonly: members cannot be modified at run-time. It can only be initialized or changed in the constructor.
+
+3. What does a constructor do?
+To  create an object of the class and initialize all the class data members.
+
+4. Why is the partial keyword useful?
+The partial keyword indicates that other parts of the class, struct, or interface can be defined in the namespace. All the parts must use the partial keyword.
+
+5. What is a tuple?
+A tuple is a data structure that contains a sequence of elements of different data types.
+
+6. What does the C# record keyword do?
+To define a reference type that provides built-in functionality for encapsulating data.
+
+7. What does overloading and overriding mean?
+Overriding: happens between the base class and derived class, we have the same method signature, including access modifier, method name, input/output; derived classes can give different implementations for the same method
+
+Overloading: multiple methods in the same class, same access modifiers, same method name, different input/output
+
+8. What is the difference between a field and a property?
+A field is a variable (that can be of any type) that is defined inside a class. It can be used to define the characteristics of an object or a class. On the other hand, a property is a member of the class that provides an abstraction to set (write) and get (read) the value of a private field.
+
+9. How do you make a method parameter optional?
+By using default values.
+
+10. What is an interface and how is it different from abstract class?
+Interface is a collection of methods which are by default abstract and public, and will be implemented by class.
+An abstract class allows you to create functionality that subclasses can implement or override. An interface only allows you to define functionality, not implement it.
+
+11. What accessibility level are members of an interface?
+Public.
+
+12. True/False. Polymorphism allows derived classes to provide different implementations
+of the same method.   True
+13. True/False. The override keyword is used to indicate that a method in a derived class is
+providing its own implementation of a method.   True
+14. True/False. The new keyword is used to indicate that a method in a derived class is
+providing its own implementation of a method.	False	
+15. True/False. Abstract methods can be used in a normal (non-abstract) class. 	False
+16. True/False. Normal (non-abstract) methods can be used in an abstract class.  		True
+17. True/False. Derived classes can override methods that were virtual in the base class.	True
+18. True/False. Derived classes can override methods that were abstract in the base class. 	True
+19. True/False. In a derived class, you can override a method that was neither virtual non abstract in the
+base class.	False
+20. True/False. A class that implements an interface does not have to provide an
+implementation for all of the members of the interface.	False
+21. True/False. A class that implements an interface is allowed to have other members that
+aren’t defined in the interface.		True
+22. True/False. A class can have more than one base class.	False
+23. True/False. A class can implement more than one interface.	True
